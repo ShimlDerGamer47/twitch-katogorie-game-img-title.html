@@ -1,0 +1,76 @@
+:root {
+  --font-family: "Roboto-Bold", Helvetica, sans-serif;
+  --border: 1px solid var(--border-color);
+  --border-color: transparent;
+  --padding-inline-block: 5px 5px;
+  --margin-top-left-bottom-right: 5px 5px 5px 5px;
+}
+
+@font-face {
+  font-family: var(--font-family);
+  src: local("/Roboto/Roboto-Bold.woff2") url("/Roboto/Roboto-Bold.woff2")
+    format("woff2");
+  font-weight: bold, normal;
+  font-style: normal;
+  font-variant: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background: transparent;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden hidden;
+  margin: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.title-img-container {
+  background: transparent;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+  border: var(--border);
+  padding: var(--padding-inline-block);
+  margin: var(--margin-top-left-bottom-right);
+  user-select: none;
+  cursor: default;
+  pointer-events: none;
+}
+
+.title-txt {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+  border: var(--border);
+  padding: var(--padding-inline-block);
+  margin: var(--margin-top-left-bottom-right);
+  text-align: center;
+  font-size: 4rem;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  user-select: none;
+  cursor: default;
+  pointer-events: none;
+}
