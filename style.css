@@ -4,6 +4,7 @@
   --border-color: transparent;
   --padding-inline-block: 5px 5px;
   --margin-top-left-bottom-right: 5px 5px 5px 5px;
+  --base-font-size: 16px;
 }
 
 @font-face {
@@ -37,8 +38,12 @@ body::-webkit-scrollbar {
 .title-img-container {
   background: transparent;
   position: absolute;
-  top: 0%;
-  left: 0%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
   display: flex;
   align-items: center;
   align-content: center;
@@ -62,7 +67,7 @@ body::-webkit-scrollbar {
   padding: var(--padding-inline-block);
   margin: var(--margin-top-left-bottom-right);
   text-align: center;
-  font-size: 4rem;
+  font-size: var(--base-font-size, 48px);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
